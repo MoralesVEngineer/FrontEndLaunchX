@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Compuestos</title>
+</head>
+
+<body>
+    <h1>Elementos Compuestos</h1>
+
+    <!-- Labels -->
+    <label for="input1">Ejemplo de Input de texto</label>
+    <br>
+    <input type="text">
+    <br><br>
+
+    <hr>
+
+    <!-- Types of Inputs-->
+    <h2>Input de Texto</h2>
+    <label for="correo1">Input de Correo</label>
+    <br>
+    <input type="email" id="correo1" name="correo1">
+    <br><br>
+    <label for="numero1">Input de Numero</label>
+    <br>
+    <input type="number" id="numero1" name="numero1">
+    <br><br>
+    <label for="psw1">Input de Password</label>
+    <br>
+    <input type="password" id="psw1" name="psw1">
+    <br><br>
+    <label for="tel1">Input de Telefono</label>
+    <br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10">
+    <br><br>
+    <label for="url1">Input de URL</label>
+    <br>
+    <input type="url" id="url1" name="tel1">
+    <br><br>
+
+    <hr>
+
+    <h2>Input de selección multiple</h2>
+    <input type="checkbox" id="topping1" name="topping1" value="chispas">
+    <label for="topping1">Chispas de Chocolate</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="nuez">
+    <label for="topping2">Nuez</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="fresas">
+    <label for="topping3">Fresas</label><br><br>
+
+    <h2>Input de selección unica</h2>
+    <input type="radio" id="roja" name="salsas" value="Roja">
+    <label for="roja">Chispas de Chocolate</label><br>
+    <input type="radio" id="verde" name="salsas" value="Verde">
+    <label for="verde">Nuez</label><br>
+    <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+    <label for="guacamole">Fresas</label><br>
+    <input type="radio" id="cacahuate" name="salsas" value="Cacahuate">
+    <label for="cacahuate">Fresas</label><br><br>
+
+    <h2>Select</h2>
+    <label for="tacos">De que</label>
+    <select name="tacos" id="tacos">
+        <option value="suadero">Suadero</option>
+        <option value="pastor">Pastor</option>
+        <option value="campechano">Campechano</option>
+        <option value="tripa">Tripa</option>
+        <option value="vegetariano">Vegetariano</option>
+    </select>
+
+    <h2>Select con Input</h2>
+    <label for="refresco">Elige tu refresco favorito</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Coca-Cola">
+        <option value="Manzana">
+        <option value="Naranja">
+        <option value="Mango">
+        <option value="Guayaba">
+    </datalist>
+    <br><br>
+
+    <hr>
+
+    <h2>Input de Fecha</h2>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br>
+
+    <hr>
+
+    <h2>Input de archivo</h2>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+
+    <h2>Input de color</h2>
+    <input type="color" name="color1" id="color1"><br><br>
+
+    <h2>Input de rango</h2>
+    <label for="vol">Volumen (entre 0 y 50)</label><br>
+    <input type="range" name="vol" id="vol" min="0" max="500"><br><br>
+
+    <hr>
+
+    <h2>Input de Botón</h2>
+    <input type="reset"><br>
+    <input type="submit"><br>
+    <input type="button" id="boton1" name="boton1" value="Boton 1" onclick="alert('Bienvenidos')"><br><br>
+
+    <hr>
+
+    <!-- Forms -->
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre"><br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" form="form1">
+</body>
+</html>
